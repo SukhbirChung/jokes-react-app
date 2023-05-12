@@ -50,10 +50,32 @@
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
     }
 
+    .Joke-Smiley i:hover{
+        animation: 0.7s ease-in-out spin;
+    }
+
 @media(min-width: 750px){
     .JokesList{
         height: 80%;
         width: 60%;
         overflow-y: scroll;
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
